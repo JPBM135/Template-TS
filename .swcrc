@@ -11,7 +11,7 @@
 			"treatConstEnumAsEnum": true,
 			"useDefineForClassFields": true
 		},
-		"target": "es2022",
+		"target": "esnext",
 		"keepClassNames": true,
 		"preserveAllComments": false,
 		"externalHelpers": true
