@@ -5,7 +5,7 @@
 	"scripts": {
 		"build:clean": "del-cli dist",
 		"build:check": "tsc --noEmit",
-		"build:esm": "swc ./src --out-dir ./dist",
+		"build:esm": "swc ./src --out-dir ./dist --strip-leading-paths",
 		"build": "yarn build:clean && yarn build:check && yarn build:esm",
 		"lint": "prettier --check . && eslint src --ext ts",
 		"lint:fix": "prettier --write . && eslint src --ext ts --fix",
